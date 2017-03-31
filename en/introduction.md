@@ -1,6 +1,10 @@
+# Social plugin for Craft CMS
+
 Let your visitors log into Craft CMS with web services like Facebook, Google, Twitter...
 
-## Overview
+![Social Login Providers](https://dukt.net/uploads/plugin-screenshots/social/social-login-providers.png)
+
+## Features
 
 - Social login for new users
 - Social registration for existing users
