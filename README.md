@@ -17,10 +17,6 @@
 ## Elements
 - [Login Accounts](en/login-accounts.md)
 
-## Models
-
-- [Login Account Model](en/login-account-model.md)
-
 ## Templating
 
 - [craft.social](en/craft.social.md)
