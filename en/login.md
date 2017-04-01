@@ -1,3 +1,5 @@
+# Login
+
 ## Usage
 
     <a href="{{ craft.social.loginUrl('google') }}">Login with Google</a>

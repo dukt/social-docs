@@ -1,3 +1,5 @@
+# Manage Login Accounts
+
 To let users manage their login accounts, list all login providers and let them connect or disconnect their account:
 
     <h2>Login Accounts</h2>

@@ -1,3 +1,5 @@
+# Create a login provider
+
 Social Login is extensible and supports third-party login providers.
 
 You can take [Craft GitHub](https://github.com/dukt/craft-github) as a starting point for create your own login provider.

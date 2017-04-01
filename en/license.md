@@ -1,3 +1,5 @@
+# License
+
 ## Beta Notice
 
 **Social Login is free to use during beta period. Use at your own risk !**

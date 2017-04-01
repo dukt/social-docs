@@ -1,3 +1,5 @@
+# craft.social
+
 ## loginAccounts($criteria = null)
 
 Returns an `ElementCriteriaModel` for Social_LoginAccount elements.
