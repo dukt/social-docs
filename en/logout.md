@@ -1,11 +1,13 @@
 # Logout
 
-A logout method is available for craft.social which logs out the user and redirects to given redirect url.
+To log a user out, use the [logoutUrl](https://craftcms.com/docs/templating/global-variables#logoutUrl) global variable provided by Craft:
+ 
+    {% if currentUser %}
+        <a href="{{ logoutUrl }}">Logout</a>
+    {% endif %}
 
-If no redirect is given it simply redirects to the referer.
+## Custom Redirect
 
-## Example
+By default, Craft will redirect the user to the homepage after logging out. To customize this behavior, use Craft’s `postLogoutRedirect` config setting:
 
-    {% set redirect = '' %}
-
-    <a href="{{ craft.social.logoutUrl(redirect) }}">Logout</a></li>
+    'postLogoutRedirect' => 'members'
