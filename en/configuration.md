@@ -35,29 +35,23 @@ Default: `[]`
 
 ## loginProviders
 
-Defines the OAuth Client ID & secret for login providers.
+Defines the OAuth client ID & secret for login providers.
 
     <?php
     
     return array(
         'loginProviders' => [
             'google' => [
-                'oauthProviderOptions' => [
-                    'clientId' => 'xxxxxxxxxx',
-                    'clientSecret' => 'xxxxxxxxxxxxxxxxxxxx'
-                ],
+                'clientId' => 'xxxxxxxxxx',
+                'clientSecret' => 'xxxxxxxxxxxxxxxxxxxx'
             ],
             'facebook' => [
-                'oauthProviderOptions' => [
-                    'clientId' => 'xxxxxxxxxx',
-                    'clientSecret' => 'xxxxxxxxxxxxxxxxxxxx'
-                ],
+                'clientId' => 'xxxxxxxxxx',
+                'clientSecret' => 'xxxxxxxxxxxxxxxxxxxx'
             ],
             'twitter' => [
-                'oauthProviderOptions' => [
-                    'clientId' => 'xxxxxxxxxx',
-                    'clientSecret' => 'xxxxxxxxxxxxxxxxxxxx'
-                ],
+                'clientId' => 'xxxxxxxxxx',
+                'clientSecret' => 'xxxxxxxxxxxxxxxxxxxx'
             ]
         ]
     );
