@@ -35,23 +35,36 @@ Default: `[]`
 
 ## loginProviders
 
-Defines the OAuth client ID & secret for login providers.
+Defines the OAuth client ID, secret, scope, authorization options and user mapping for login providers.
 
     <?php
     
     return array(
         'loginProviders' => [
             'google' => [
-                'clientId' => 'xxxxxxxxxx',
-                'clientSecret' => 'xxxxxxxxxxxxxxxxxxxx'
+                'clientId' => 'OAUTH_CLIENT_ID',
+                'clientSecret' => 'OAUTH_CLIENT_SECRET',
+                'scope' => ["CUSTOM_SCOPE"],
+                'authorizationOptions' => ["CUSTOM_AUTHORIZATION_OPTION"]
             ],
             'facebook' => [
-                'clientId' => 'xxxxxxxxxx',
-                'clientSecret' => 'xxxxxxxxxxxxxxxxxxxx'
+                'clientId' => 'OAUTH_CLIENT_ID',
+                'clientSecret' => 'OAUTH_CLIENT_SECRET',
+                'userMapping' => [
+                    'firstName' => '{{ firstName }}',
+                    'lastName' => '{{ lastName }}',
+                    'location' => '{{ locationName }}',
+                    'gender' => '{{ gender }}',
+                    'profileUrl' => '{{ link }}',
+                ],
             ],
             'twitter' => [
-                'clientId' => 'xxxxxxxxxx',
-                'clientSecret' => 'xxxxxxxxxxxxxxxxxxxx'
+                'clientId' => 'OAUTH_CLIENT_ID',
+                'clientSecret' => 'OAUTH_CLIENT_SECRET',
+                'userMapping' => [
+                    'location' => '{{ location }}',
+                    'profileUrl' => '{{ nickname }}',
+                ],
             ]
         ]
     );
@@ -60,7 +73,3 @@ Defines the OAuth client ID & secret for login providers.
 ## showCpSection
 
 Toggles the visibility of the Social Login menu item in the Control Panel sidebar.
-
-## userMapping
-
-User profile field mapping.
