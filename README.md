@@ -27,7 +27,3 @@
 
 ## Elements
 - [Login Accounts](en/login-accounts.md)
-
-## Developers
-
-- [Creating Login Provider](en/creating-login-provider.md)
