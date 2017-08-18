@@ -8,6 +8,12 @@
 - [Configuration](en/configuration.md)
 - [License](en/license.md)
 
+## Login Providers
+
+- [Facebook](en/facebook.md)
+- [Google](en/google.md)
+- [Twitter](en/twitter.md)
+
 ## Usage
 
 - [Login](en/login.md)
@@ -20,13 +26,6 @@
 ## Templating
 
 - [craft.social](en/craft.social.md)
-
-
-## Login Providers
-
-- [Facebook](en/facebook.md)
-- [Google](en/google.md)
-- [Twitter](en/twitter.md)
 
 ## Developers
 
