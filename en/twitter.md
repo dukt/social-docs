@@ -8,7 +8,7 @@ Follow these steps to configure Twitter for social login:
 1. Go to [Twitter Application Manager](https://dev.twitter.com/apps).
 1. Create a new Twitter application: `Create New App`
 1. Fill all required fields
-1. Fill `Callback URL` field with the Redirect URI found in in `Craft CP > Settings > OAuth > Twitter` (Example: http://playground.dev/index.php/actions/oauth/connect)
+1. Fill `Callback URL` field with the Redirect URI found in `CP / Settings / Social / Login Providers / Twitter`
 1. Agree the terms and save the application
 
 ### Setup app permissions
@@ -20,9 +20,22 @@ Follow these steps to configure Twitter for social login:
 1. Under `Permissions > Access`, select `Read and write` (don't choose the one that give access to direct message otherwise social login will fail)
 1. Under `Permissions > Additional Permissions`, check the `Request email addresses from users` box (this will only be visible once Twitter has whitelisted your app)
 
-### Update OAuth settings in Craft
-1. Use the Consumer Key & secret from the OAuth application that you've just created to configure Craft OAuth's Twitter provider in `Craft CP > Settings > OAuth > Twitter`
-1. Social login is now setup and available for Twitter
+### OAuth settings in Craft
+1. Twitter will provide you a client ID (consumer key) and client secret (consumer secret) for your application, copy them into a `craft/config/social.php` file with the following settings:
+        
+        <?php
+        
+        return [
+                'twitter' => [
+                    'clientId' => 'xxxxxxxxxxxxxxxxxxxxxxxxx',
+                    'clientSecret' => 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+                ],
+            ]
+        ];
+
+1. Go to `CP / Settings / Social / Login Providers` and enable Twitter
+
+🎉
 
 ## Profile Variables
 
