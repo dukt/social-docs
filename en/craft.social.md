@@ -10,12 +10,6 @@ Returns an `ElementCriteriaModel` for Social_LoginAccount elements.
 
 <p>Returns a link for logging in with given provider.</p>
 
-## getLogoutUrl($redirect = null)
-
-<pre><code>{{ craft.social.logout() }}</code></pre>
-
-<p>Returns a link for logging out.</p>
-
 ## getLoginAccountByLoginProvider($loginProviderHandle)
 
 Get login account by provider handle
