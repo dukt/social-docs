@@ -12,7 +12,7 @@ When a user registers on your website with Social login, data can be imported fr
 
 By default, the plugin automatically maps the `email` and `username` Craft user fields with the `{{ email }}` profile variable, this way new users already have their email address set, with their email as username.
 
-The field mapping can be customized for each provider by creating a `craft/config/social.php` config file:
+The field mapping can be customized by creating a `craft/config/social.php` config file:
 
     <?php
     
