@@ -8,7 +8,7 @@ Follow these steps to configure Twitter for social login:
 1. Go to the [Twitter Application Manager](https://dev.twitter.com/apps).
 1. Create a new Twitter application: `Create New App`
 1. Fill all required fields
-1. Fill `Callback URL` field with the Redirect URI found in `CP → Settings → Social → Login Providers → Twitter`
+1. Fill `Callback URL` field with the Redirect URI found in CP → Settings → Social → Login Providers → Twitter
 1. Agree the terms and save the application
 
 ### Setup app permissions
@@ -33,7 +33,7 @@ Follow these steps to configure Twitter for social login:
             ]
         ];
 
-1. Go to `CP → Settings → Social → Login Providers` and enable Twitter
+1. Go to CP → Settings → Social → Login Providers and enable Twitter
 
 🎉
 
