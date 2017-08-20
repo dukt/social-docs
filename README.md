@@ -16,6 +16,7 @@
 
 ## Usage
 
+- [Registration](en/registration.md)
 - [Login](en/login.md)
 - [Logout](en/logout.md)
 - [Managing Login Accounts](en/managing-login-accounts.md)
