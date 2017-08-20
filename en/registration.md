@@ -54,4 +54,4 @@ The field mapping can be customized for each provider by creating a `craft/confi
     
 Login providers have a `userMapping` config which expects an array, with Craft user field handles as keys (make sure the fields exist), and a template string as value where all profile variables are available.
 
-Each login provider comes with its own set of profile variables, [check login provider pages](../#login-providers) to see the supported variables.
+Each login provider comes with its own set of profile variables, [check login provider pages](../README.md#login-providers) to see the supported variables.
