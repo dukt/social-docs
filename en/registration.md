@@ -1,6 +1,6 @@
 # Registration
 
-With Social, registration becomes as simple as a login.
+With Social, registration becomes as simple as a click.
 
 ## Usage
 
