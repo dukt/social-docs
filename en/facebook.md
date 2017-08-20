@@ -4,7 +4,7 @@ Follow these steps to configure Facebook for social login:
 
 ## OAuth Configuration
 
-1. Go to [Facebook API Manager](https://developers.facebook.com/apps).
+1. Go to the [Facebook API Manager](https://developers.facebook.com/apps).
 1. Create a new Facebook application: `Facebook API Manager / My Apps / Add a new App / Website`.
 1. Once created, configure the Facebook App's OAuth settings: `Facebook API Manager / My App / Settings / Advanced / Client OAuth Settings`
 1. Enable **Client Login** and **Web OAuth Login**

@@ -5,7 +5,7 @@ Follow these steps to configure Twitter for social login:
 ## OAuth Configuration
 
 ### Create a new app
-1. Go to [Twitter Application Manager](https://dev.twitter.com/apps).
+1. Go to the [Twitter Application Manager](https://dev.twitter.com/apps).
 1. Create a new Twitter application: `Create New App`
 1. Fill all required fields
 1. Fill `Callback URL` field with the Redirect URI found in `CP / Settings / Social / Login Providers / Twitter`

@@ -4,7 +4,7 @@ Follow these steps to configure Google for social login:
 
 ## OAuth Configuration
 
-1. Go to [Google Console](https://code.google.com/apis/console/).
+1. Go to the [Google Console](https://code.google.com/apis/console/).
 1. Create a new project.
 1. Go to **Google Console / My Project / Credentials / Consent Screen** and make sure to fill the Product name field.
 1. Go to **Google Console / My Project / Credentials** and create credentials for a new “OAuth client ID” with the following settings:
