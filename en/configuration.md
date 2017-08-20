@@ -1,6 +1,6 @@
 # Configuration
 
-In addition to the settings available in the CP Settings > Plugins > Social screen, the config items below can be placed into a social.php file in your craft/config directory:
+In addition to the settings available in the CP Settings → Plugins → Social screen, the config items below can be placed into a social.php file in your craft/config directory:
 
 ## allowEmailMatch
 
