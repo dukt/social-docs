@@ -10,6 +10,7 @@ Follow these steps to configure Facebook for social login:
 1. Go to Your App → Facebook Login → Settings, fill the “Valid OAuth redirect URIs” field with the Redirect URI found in Craft CP → Settings → OAuth → Facebook, and save.
 1. Now go to Your App → Settings → Basic and copy the App ID and App Secret and use them as client ID and client secret in Craft CP → Settings → OAuth → Facebook.
 1. Go to CP → Settings → Social → Login Providers and enable Facebook.
+
 🎉
 
 ## Profile Variables
