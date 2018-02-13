@@ -5,12 +5,12 @@ Follow these steps to configure Facebook for social login:
 ## OAuth Configuration
 
 1. Go to [Facebook API Manager](https://developers.facebook.com/apps).
-1. Create a new Facebook application: `My Apps > Add a new App > Website`
-1. Once created, configure the Facebook App's OAuth settings: `FB App > Settings > Advanced > Client OAuth Settings`
-1. Enable **Client Login** and **Web OAuth Login**
-1. Fill the **Valid OAuth redirect URIs** field with the Redirect URI found in in `Craft CP > Settings > OAuth > Facebook` (Example: http://playground.dev/index.php/actions/oauth/connect)
-1. Use the client ID & secret from the OAuth application that you've just created to configure Craft OAuth's Facebook provider in `Craft CP > Settings > OAuth > Facebook`
-1. Social login is now setup and available for Facebook
+1. Click the “Add a New App” button to create a new Facebook application.
+1. Once created, go to your application and set up the “Facebook Login” product.
+1. Go to Your App → Facebook Login → Settings, fill the “Valid OAuth redirect URIs” field with the Redirect URI found in Craft CP → Settings → OAuth → Facebook, and save.
+1. Now go to Your App → Settings → Basic and copy the App ID and App Secret and use them as client ID and client secret in Craft CP → Settings → OAuth → Facebook.
+1. Go to CP → Settings → Social → Login Providers and enable Facebook.
+🎉
 
 ## Profile Variables
 
