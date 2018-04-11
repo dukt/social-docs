@@ -24,6 +24,10 @@ Follow these steps to configure Facebook for social login:
 
 🎉
 
+**Warning:** Facebook user IDs are only unique per Facebook API app. 
+Using a different Facebook API app app (changing the client ID), will most of the time break the relation between a Craft user and a Facebook user. 
+It will also prevent people which have already setup their accounts to login using Facebook for logging in, and the plugin will think that the email is already registered for a different Facebook user ID.
+
 ## Profile Variables
 
 - id
