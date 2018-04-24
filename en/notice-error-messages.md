@@ -13,6 +13,6 @@ Copy these lines to your layout template to start showing notices and errors on 
         {% endfor %}
     </div>
     
-See [layout template’s source code](https://github.com/dukt/social-demo/blob/v2/craft/templates/social/_layouts/site.html#L65).
+See [layout template’s source code](https://github.com/dukt/social-demo/blob/v2/craft/templates/social/_layouts/site.html#L68).
 
 See [dukt/social-demo](https://github.com/dukt/social-demo/) repository.
