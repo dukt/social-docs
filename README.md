@@ -20,6 +20,7 @@
 - [Login](en/login.md)
 - [Logout](en/logout.md)
 - [Managing Login Accounts](en/managing-login-accounts.md)
+- [Notice & Error Messages](en/notice-error-messages.md)
 
 ## Templating
 
