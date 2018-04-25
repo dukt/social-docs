@@ -1,6 +1,6 @@
 # Notice & Error Messages
 
-Social sets a notice flash message on registration and login, and f there is an error, it will return an error flash message.
+Social sets a notice flash message on registration and login, and if there is an error, it will return an error flash message.
 
 Copy these lines to your layout template to start showing notices and errors on the front-end:
     
