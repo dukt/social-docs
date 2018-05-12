@@ -1,4 +1,10 @@
 # Installation
+This plugin can be installed either through the Plugin Store or through Composer.
+
+### Plugin Store
+Go to **Craft → Plugin Store** and search for **Social**, then click Install.
+
+### Composer
 
 To install the plugin, follow these instructions.
 
@@ -11,6 +17,7 @@ To install the plugin, follow these instructions.
         composer require dukt/social
 
 3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Social.
+
 
 ## Updating from Social 1.x
 
