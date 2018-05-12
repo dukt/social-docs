@@ -6,7 +6,9 @@ Returns an `ElementCriteriaModel` for Social_LoginAccount elements.
 
 ## getLoginUrl($providerHandle, $params = array())
 
-<pre><code>{{ craft.social.login('facebook', { redirect: 'account' } ) }}</code></pre>
+```twig
+{{ craft.social.login('facebook', { redirect: 'account' } ) }}
+```
 
 <p>Returns a link for logging in with given provider.</p>
 
