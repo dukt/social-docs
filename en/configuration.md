@@ -37,37 +37,39 @@ Default: `[]`
 
 Defines the OAuth client ID, secret, scope, authorization options and user mapping for login providers.
 
-    <?php
-    
-    return array(
-        'loginProviders' => [
-            'google' => [
-                'clientId' => 'OAUTH_CLIENT_ID',
-                'clientSecret' => 'OAUTH_CLIENT_SECRET',
-                'scope' => ["CUSTOM_SCOPE"],
-                'authorizationOptions' => ["CUSTOM_AUTHORIZATION_OPTION"]
+```php
+<?php
+
+return array(
+    'loginProviders' => [
+        'google' => [
+            'clientId' => 'OAUTH_CLIENT_ID',
+            'clientSecret' => 'OAUTH_CLIENT_SECRET',
+            'scope' => ["CUSTOM_SCOPE"],
+            'authorizationOptions' => ["CUSTOM_AUTHORIZATION_OPTION"]
+        ],
+        'facebook' => [
+            'clientId' => 'OAUTH_CLIENT_ID',
+            'clientSecret' => 'OAUTH_CLIENT_SECRET',
+            'userMapping' => [
+                'firstName' => '{{ firstName }}',
+                'lastName' => '{{ lastName }}',
+                'location' => '{{ locationName }}',
+                'gender' => '{{ gender }}',
+                'profileUrl' => '{{ link }}',
             ],
-            'facebook' => [
-                'clientId' => 'OAUTH_CLIENT_ID',
-                'clientSecret' => 'OAUTH_CLIENT_SECRET',
-                'userMapping' => [
-                    'firstName' => '{{ firstName }}',
-                    'lastName' => '{{ lastName }}',
-                    'location' => '{{ locationName }}',
-                    'gender' => '{{ gender }}',
-                    'profileUrl' => '{{ link }}',
-                ],
+        ],
+        'twitter' => [
+            'clientId' => 'OAUTH_CLIENT_ID',
+            'clientSecret' => 'OAUTH_CLIENT_SECRET',
+            'userMapping' => [
+                'location' => '{{ location }}',
+                'profileUrl' => '{{ nickname }}',
             ],
-            'twitter' => [
-                'clientId' => 'OAUTH_CLIENT_ID',
-                'clientSecret' => 'OAUTH_CLIENT_SECRET',
-                'userMapping' => [
-                    'location' => '{{ location }}',
-                    'profileUrl' => '{{ nickname }}',
-                ],
-            ]
         ]
-    );
+    ]
+);
+```
 
 
 ## showCpSection
