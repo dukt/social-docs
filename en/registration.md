@@ -4,7 +4,9 @@ With Social, registration becomes as simple as a click.
 
 ## Usage
 
-    <a href="{{ craft.social.loginUrl('google') }}">Login with Google</a>
+```twig
+<a href="{{ craft.social.loginUrl('google') }}">Login with Google</a>
+```
 
 ## User mapping
 
@@ -14,44 +16,46 @@ By default, the plugin automatically maps the `email` and `username` Craft user 
 
 The field mapping can be customized by creating a `craft/config/social.php` config file:
 
-    <?php
-    
-    
-    return [
-        'loginProviders' => [
-            'google' => [
-                
-                ...
-                
-                'userMapping' => [
-                    'firstName' => '{{ firstName }}',
-                    'lastName' => '{{ lastName }}',
-                ],
+```php
+<?php
+
+
+return [
+    'loginProviders' => [
+        'google' => [
+            
+            ...
+            
+            'userMapping' => [
+                'firstName' => '{{ firstName }}',
+                'lastName' => '{{ lastName }}',
             ],
-            'facebook' => [
-                
-                ...
-                
-                'userMapping' => [
-                    'firstName' => '{{ firstName }}',
-                    'lastName' => '{{ lastName }}',
-                    'location' => '{{ locationName }}',
-                    'gender' => '{{ gender }}',
-                    'profileUrl' => '{{ link }}',
-                ],
+        ],
+        'facebook' => [
+            
+            ...
+            
+            'userMapping' => [
+                'firstName' => '{{ firstName }}',
+                'lastName' => '{{ lastName }}',
+                'location' => '{{ locationName }}',
+                'gender' => '{{ gender }}',
+                'profileUrl' => '{{ link }}',
             ],
-            'twitter' => [
-                
-                ...
-                
-                'userMapping' => [
-                    'location' => '{{ location }}',
-                    'profileUrl' => '{{ nickname }}',
-                ]
+        ],
+        'twitter' => [
+            
+            ...
+            
+            'userMapping' => [
+                'location' => '{{ location }}',
+                'profileUrl' => '{{ nickname }}',
             ]
         ]
-    ];
-    
+    ]
+];
+```
+
 Login providers have a `userMapping` config which expects an array, with Craft user field handles as keys (make sure the fields exist), and a template string as value where all profile variables are available.
 
 Each login provider comes with its own set of profile variables, [check login provider pages](../README.md#login-providers) to see the supported variables.
