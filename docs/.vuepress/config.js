@@ -2,6 +2,7 @@ module.exports = {
     title: 'Social 2 Documentation',
     description: 'Social 2 Documentation',
     base: '/social/v2/',
+    ga: 'UA-1547168-34',
     themeConfig: {
         nav: [
             { text: 'Analytics', link: 'https://docs.dukt.net/analytics/v4/' },
