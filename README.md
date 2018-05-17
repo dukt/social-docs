@@ -2,30 +2,30 @@
 
 ## Getting Started
 
-- [Introduction](en/introduction.md)
-- [Requirements](en/requirements.md)
-- [Installation](en/installation.md)
-- [Configuration](en/configuration.md)
-- [License](en/license.md)
+- [Introduction](docs/introduction.md)
+- [Requirements](docs/requirements.md)
+- [Installation](docs/installation.md)
+- [Configuration](docs/configuration.md)
+- [License](docs/license.md)
 
 ## Login Providers
 
-- [Facebook](en/facebook.md)
-- [Google](en/google.md)
-- [Twitter](en/twitter.md)
+- [Facebook](docs/facebook.md)
+- [Google](docs/google.md)
+- [Twitter](docs/twitter.md)
 
 ## Usage
 
-- [Registration](en/registration.md)
-- [Login](en/login.md)
-- [Logout](en/logout.md)
-- [Managing Login Accounts](en/managing-login-accounts.md)
-- [Notice & Error Messages](en/notice-error-messages.md)
+- [Registration](docs/registration.md)
+- [Login](docs/login.md)
+- [Logout](docs/logout.md)
+- [Managing Login Accounts](docs/managing-login-accounts.md)
+- [Notice & Error Messages](docs/notice-error-messages.md)
 
 ## Templating
 
-- [craft.social](en/craft.social.md)
-- [Demo Templates](en/demo-templates.md)
+- [craft.social](docs/craft.social.md)
+- [Demo Templates](docs/demo-templates.md)
 
 ## Elements
-- [Login Accounts](en/login-accounts.md)
+- [Login Accounts](docs/login-accounts.md)
