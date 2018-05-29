@@ -5,7 +5,7 @@ With Social, registration becomes as simple as a click.
 ## Usage
 
 ```twig
-<a href="{{ craft.social.loginUrl('google') }}">Login with Google</a>
+<a href="{{ craft.social.getLoginUrl('google') }}">Login with Google</a>
 ```
 
 ## User mapping
