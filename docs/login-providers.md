@@ -1,4 +1,4 @@
-# Supported Login Providers
+# Supported Providers
 
 ## Core Providers
 - [Facebook](facebook.md)
