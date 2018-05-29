@@ -2,7 +2,7 @@
 
 Let users manage their login accounts, list all login providers and let them connect or disconnect their account from the front-end.
 
-## Retrieving login providers
+## Retrieve login providers
 
 Get list of enabled login providers.
 
@@ -16,7 +16,7 @@ To retrieve disabled login providers as well, you will need to pass `false` as a
 {% set loginProviders = craft.social.getLoginProviders(false) %}
 ```
 
-## Retrieving login accounts
+## Retrieve login accounts
 
 Retrieve login account elements based on criterias.
 
@@ -40,7 +40,7 @@ Param              | Accepts                              | Description
 `lastLoginDate`	   | `mixed`                              | The last time the user has logged in
 
 
-## Retrieving a login account
+## Retrieve a login account
 
 Get a login account from its login provider’s handle.
 
@@ -48,7 +48,7 @@ Get a login account from its login provider’s handle.
 {% set loginAccount = craft.social.getLoginAccountByLoginProvider('google') %}
 ```
 
-## Connecting to a login provider
+## Connect to a login provider
 
 Get login account connect URL by login provider handle.
 
@@ -56,7 +56,7 @@ Get login account connect URL by login provider handle.
 <a href="{{ craft.social.getLoginAccountConnectUrl('google') }}>Enable social login with Google</a>
 ```
 
-## Disconnecting from a login provider
+## Disconnect from a login provider
 
 Get login account disconnect URL by login provider handle.
 
