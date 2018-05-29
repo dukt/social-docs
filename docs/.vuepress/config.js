@@ -25,6 +25,7 @@ module.exports = {
                  title: 'Login Providers',
                  collapsable: false,
                  children: [
+                     'login-providers',
                      'facebook',
                      'google',
                      'twitter',
