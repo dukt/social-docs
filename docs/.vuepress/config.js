@@ -39,21 +39,7 @@ module.exports = {
                      'logout',
                      'managing-login-accounts',
                      'notice-error-messages',
-                 ]
-             },
-             {
-                 title: 'Templating',
-                 collapsable: false,
-                 children: [
-                     'craft.social',
                      'demo-templates',
-                 ]
-             },
-             {
-                 title: 'Elements',
-                 collapsable: false,
-                 children: [
-                     'login-accounts',
                  ]
              }
          ],
