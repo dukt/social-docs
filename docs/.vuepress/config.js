@@ -12,7 +12,7 @@ module.exports = {
         sidebar: {
          '/': [
              {
-                 title: 'Introduction',
+                 title: 'Getting Started',
                  collapsable: false,
                  children: [
                      '',

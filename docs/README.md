@@ -1,4 +1,4 @@
-# About Social
+# Introduction
 
 Lets your visitors log into Craft CMS with web services like Facebook, Google, Twitter...
 
