@@ -12,7 +12,7 @@ Allow email matching.
 
 ## autoFillProfile
 
-Automatically fills user fields when a user registers, based on userMapping config variables.
+Automatically fills user fields when a user registers, based on userFieldMapping config variables.
 
 ```php
 'autoFillProfile' => true,
@@ -67,37 +67,59 @@ Lock social registration to specific domains. The list of locked domains must be
 
 ## loginProviders
 
-Defines the OAuth client ID, secret, scope, authorization options and user mapping for login providers.
+Defines the login OAuth scope, profile fields, and [user field mapping](registration.md#user-field-mapping) for login providers.
 
 ```php
 <?php
 
 return array(
     'loginProviders' => [
+        'facebook' => [
+            'userFieldMapping' => [
+                'gender' => '{{ profile.gender }}',
+                'birthday' => '{{ profile.toArray().birthday }}',
+            ],
+            'oauth' => [
+                'scope' => [
+                    'user_birthday'
+                ]
+            ],
+            'profileFields' => [
+                'birthday',
+            ],
+        ]
+    ]
+);
+```
+
+## oauthProviders
+
+Defines the OAuth client ID, secret, scope and authorization options.
+
+```php
+<?php
+
+return array(
+    'oauthProviders' => [
         'google' => [
-            'clientId' => 'OAUTH_CLIENT_ID',
-            'clientSecret' => 'OAUTH_CLIENT_SECRET',
+            'options' => [
+                'clientId' => 'OAUTH_CLIENT_ID',
+                'clientSecret' => 'OAUTH_CLIENT_SECRET',    
+            ],
             'scope' => ['CUSTOM_SCOPE'],
             'authorizationOptions' => ['CUSTOM_AUTHORIZATION_OPTION']
         ],
         'facebook' => [
-            'clientId' => 'OAUTH_CLIENT_ID',
-            'clientSecret' => 'OAUTH_CLIENT_SECRET',
-            'userMapping' => [
-                'firstName' => '{{ firstName }}',
-                'lastName' => '{{ lastName }}',
-                'location' => '{{ locationName }}',
-                'gender' => '{{ gender }}',
-                'profileUrl' => '{{ link }}',
-            ],
+            'options' => [
+                'clientId' => 'OAUTH_CLIENT_ID',
+                'clientSecret' => 'OAUTH_CLIENT_SECRET',
+            ]
         ],
         'twitter' => [
-            'clientId' => 'OAUTH_CLIENT_ID',
-            'clientSecret' => 'OAUTH_CLIENT_SECRET',
-            'userMapping' => [
-                'location' => '{{ location }}',
-                'profileUrl' => '{{ nickname }}',
-            ],
+            'options' => [
+                'clientId' => 'OAUTH_CLIENT_ID',
+                'clientSecret' => 'OAUTH_CLIENT_SECRET',
+            ]
         ]
     ]
 );
