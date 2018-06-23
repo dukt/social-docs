@@ -1,4 +1,4 @@
-# Manage Login Accounts
+# Managing Login Accounts
 
 Let users manage their login accounts, list all login providers and let them connect or disconnect their account from the front-end.
 
@@ -72,7 +72,6 @@ This example lists enabled login providers and shows a “Enable/Disable Social 
 <h2>Login Accounts</h2>
 
 {% for provider in craft.social.getLoginProviders() %}
-
     {% set account = craft.social.getLoginAccountByLoginProvider(provider.handle) %}
 
     <h4>{{ provider.name }}</h4>
@@ -87,11 +86,10 @@ This example lists enabled login providers and shows a “Enable/Disable Social 
 
     <p>
         {% if account %}
-            <a href="{{ craft.social.getLoginAccountDisconnectUrl(loginProvider.handle) }}">Disable Social Login with {{ loginProvider.name }}</a>
+            <a href="{{ craft.social.getLoginAccountDisconnectUrl(provider.handle) }}">Disable Social Login with {{ provider.name }}</a>
         {% else %}
-            <a href="{{ craft.social.getLoginAccountConnectUrl(loginProvider.handle) }}">Enable Social Login with {{ loginProvider.name }}</a>
+            <a href="{{ craft.social.getLoginAccountConnectUrl(provider.handle) }}">Enable Social Login with {{ provider.name }}</a>
         {% endif %}
     </p>
-
 {% endfor %}
 ```
