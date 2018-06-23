@@ -1,61 +1,15 @@
 # Registration
 
-With Social, registration becomes as simple as a click.
-
 ## Usage
+
+Use the `craft.social.getLoginUrl()` method to show a link that will register new users and authenticate existing ones.
 
 ```twig
 <a href="{{ craft.social.getLoginUrl('google') }}">Login with Google</a>
 ```
 
-## User mapping
+## User Field Mapping
 
-When a user registers on your website with Social login, data can be imported from the user’s social profile, and be used to create the Craft user.
+When a user registers on your website with Social login, the data from the user’s social profile can be used to fill the Craft user’s fields.  
 
-By default, the plugin automatically maps the `email` and `username` Craft user fields with the `{{ email }}` profile variable, this way new users already have their email address set, with their email as username.
-
-The field mapping can be customized by creating a `craft/config/social.php` config file:
-
-```php
-<?php
-
-
-return [
-    'loginProviders' => [
-        'google' => [
-            
-            ...
-            
-            'userMapping' => [
-                'firstName' => '{{ firstName }}',
-                'lastName' => '{{ lastName }}',
-            ],
-        ],
-        'facebook' => [
-            
-            ...
-            
-            'userMapping' => [
-                'firstName' => '{{ firstName }}',
-                'lastName' => '{{ lastName }}',
-                'location' => '{{ locationName }}',
-                'gender' => '{{ gender }}',
-                'profileUrl' => '{{ link }}',
-            ],
-        ],
-        'twitter' => [
-            
-            ...
-            
-            'userMapping' => [
-                'location' => '{{ location }}',
-                'profileUrl' => '{{ nickname }}',
-            ]
-        ]
-    ]
-];
-```
-
-Login providers have a `userMapping` config which expects an array, with Craft user field handles as keys (make sure the fields exist), and a template string as value where all profile variables are available.
-
-Each login provider comes with its own set of profile variables, [check login provider pages](login-providers.md) to see the supported variables.
+[See User Field Mapping for login providers](login-providers.md#user-field-mapping)
