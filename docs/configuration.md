@@ -59,7 +59,7 @@ When disabled, users will not able to register with a social service, but will s
 ```
 
 ## lockDomains
-Lock social registration to specific domains. The list of locked domains must be provided as as array.
+Locks social registration to specific domains. The list of locked domains must be provided as as array.
 
 ```php
 'lockDomains' => [],
@@ -67,7 +67,7 @@ Lock social registration to specific domains. The list of locked domains must be
 
 ## loginProviders
 
-Defines the login OAuth scope, profile fields, and [user field mapping](registration.md#user-field-mapping) for login providers.
+Defines the [user field mapping](registration.md#user-field-mapping), the profile fields and the OAuth configuration for login providers.
 
 ```php
 <?php
@@ -79,57 +79,24 @@ return array(
                 'gender' => '{{ profile.gender }}',
                 'birthday' => '{{ profile.toArray().birthday }}',
             ],
-            'oauth' => [
-                'scope' => [
-                    'user_birthday'
-                ]
-            ],
             'profileFields' => [
                 'birthday',
             ],
-        ]
-    ]
-);
-```
-
-## oauthProviders
-
-Defines the OAuth client ID, secret, scope and authorization options.
-
-```php
-<?php
-
-return array(
-    'oauthProviders' => [
-        'google' => [
-            'options' => [
-                'clientId' => 'OAUTH_CLIENT_ID',
-                'clientSecret' => 'OAUTH_CLIENT_SECRET',    
+            'oauth' => [
+                'options' => [
+                    'clientId' => 'CLIENT_ID',
+                    'clientSecret' => 'CLIENT_SECRET',    
+                ],
+                'scope' => [
+                    'SCOPE_1', 
+                    'SCOPE_2'
+                ],       
+                'authorizationOptions' => [
+                    'OPTION_1' => 'VALUE_1', 
+                    'OPTION_2' => 'VALUE_2',
+                ]
             ],
-            'scope' => ['CUSTOM_SCOPE'],
-            'authorizationOptions' => ['CUSTOM_AUTHORIZATION_OPTION']
-        ],
-        'facebook' => [
-            'options' => [
-                'clientId' => 'OAUTH_CLIENT_ID',
-                'clientSecret' => 'OAUTH_CLIENT_SECRET',
-            ]
-        ],
-        'twitter' => [
-            'options' => [
-                'clientId' => 'OAUTH_CLIENT_ID',
-                'clientSecret' => 'OAUTH_CLIENT_SECRET',
-            ]
         ]
     ]
 );
-```
-
-
-## showCpSection
-
-Toggles the visibility of the Social Login menu item in the Control Panel sidebar.
-
-```php
-'enableCpLogin' => false,
 ```
