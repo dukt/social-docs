@@ -71,7 +71,7 @@ By default, the following permissions are being requested:
 ```
 [See Facebook permissions](https://developers.facebook.com/docs/facebook-login/permissions)
 
-⚠️ **Warning:** If your app asks for more than than `public_profile` and `email`, it will require [review](https://developers.facebook.com/docs/facebook-login/permissions/review) by Facebook before your app can be used by people other than the app's developers. 
+⚠️ **Warning:** If your app asks for more than `public_profile` and `email`, it will require [review](https://developers.facebook.com/docs/facebook-login/permissions/review) by Facebook before your app can be used by people other than the app's developers. 
 
 
 #### Profile Fields
@@ -99,7 +99,6 @@ By default, the following fields are being requested:
 
 #### User Field Mapping
 If you request additional fields, they probably won't be supported by the [FacebookUser](https://github.com/thephpleague/oauth2-facebook/blob/master/src/Provider/FacebookUser.php) object which only supports the default fields.
-
 To access the additional fields, you need to use the `toArray()` method to access `FacebookUser`’s raw response data.
 
 ```twig
