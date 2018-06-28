@@ -20,6 +20,7 @@ module.exports = {
                      '',
                      'requirements',
                      'installation',
+                     'updating',
                      'configuration',
                  ]
              },
