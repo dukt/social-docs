@@ -8,7 +8,9 @@ Follow these steps to configure Twitter for social login:
 1. Go to the [Twitter Application Manager](https://dev.twitter.com/apps).
 1. Click “Create New App” to create a new Twitter application.
 1. Fill all required fields.
-1. Fill the “Callback URL” field with the Redirect URI found in **Craft Control Panel → Settings → Social → Login Providers → Twitter**.
+1. Go to **Craft Control Panel → Settings → Social → Login Providers → Twitter** and copy the Redirect URI.
+1. If the Redirect URI contains query parameters, change Craft’s [usePathInfo](https://docs.craftcms.com/v3/config/config-settings.html#usepathinfo) config to `true` to use `PATH_INFO` to specify the path as Twitter [doesn’t allow query parameters in callback URLs](https://developer.twitter.com/en/docs/basics/apps/guides/callback-urls) anymore.
+1. Copy the Redirect URI to the Twitter Application’s “Callback URL” field.
 1. Agree to the terms and save the application.
 
 ### Step 2: Setup app permissions
