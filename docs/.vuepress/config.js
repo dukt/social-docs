@@ -4,6 +4,11 @@ module.exports = {
     base: '/social/v2/',
     ga: 'UA-1547168-34',
     themeConfig: {
+        docsRepo: 'dukt/social-docs',
+        docsDir: 'docs',
+        docsBranch: 'v2',
+        editLinks: true,
+        editLinkText: 'Edit this page on GitHub',
         nav: [
             { text: 'Analytics', link: 'https://docs.dukt.net/analytics/v4/' },
             { text: 'Facebook', link: 'https://docs.dukt.net/facebook/v2/'},
