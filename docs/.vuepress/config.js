@@ -1,15 +1,15 @@
 module.exports = {
     title: 'Social 2 Documentation',
     description: 'Social 2 Documentation',
-    base: '/social/v2/',
+    base: '/docs/social/v2/',
     ga: 'UA-1547168-34',
     themeConfig: {
         nav: [
-            { text: 'Analytics', link: 'https://docs.dukt.net/analytics/v4/' },
-            { text: 'Facebook', link: 'https://docs.dukt.net/facebook/v2/'},
+            { text: 'Analytics', link: 'https://dukt.net/docs/analytics/v4/' },
+            { text: 'Facebook', link: 'https://dukt.net/docs/facebook/v2/'},
             { text: 'Social', link: '/' },
-            { text: 'Twitter', link: 'https://docs.dukt.net/twitter/v2/'},
-            { text: 'Videos', link: 'https://docs.dukt.net/videos/v2/' },
+            { text: 'Twitter', link: 'https://dukt.net/docs/twitter/v2/'},
+            { text: 'Videos', link: 'https://dukt.net/docs/videos/v2/' },
         ],
         sidebar: {
          '/': [
