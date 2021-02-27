@@ -1,6 +1,6 @@
 module.exports = {
-    title: 'Social 2 Documentation',
-    description: 'Social 2 Documentation',
+    title: 'Social Documentation',
+    description: 'Social Documentation',
     base: '/docs/social/v2/',
     ga: 'UA-1547168-34',
     themeConfig: {
@@ -19,7 +19,7 @@ module.exports = {
         sidebar: {
          '/': [
              {
-                 title: 'Getting Started',
+                 title: 'Social plugin for Craft CMS',
                  collapsable: false,
                  children: [
                      '',
