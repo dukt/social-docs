@@ -2,7 +2,7 @@ module.exports = {
     title: 'Social Documentation',
     description: 'Social Documentation',
     base: '/docs/social/v2/',
-    ga: 'UA-1547168-34',
+    ga: 'UA-1547168-20',
     themeConfig: {
         docsRepo: 'dukt/social-docs',
         docsDir: 'docs',
