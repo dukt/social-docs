@@ -2,14 +2,14 @@ module.exports = {
     title: 'Social Documentation',
     description: 'Social Documentation',
     base: '/docs/social/v2/',
-    plugins: [
-        [
-            '@vuepress/google-analytics',
-            {
-                'ga': 'UA-1547168-20'
-            }
-        ]
-    ],
+    plugins: {
+        '@vuepress/google-analytics': {
+            'ga': 'UA-1547168-20'
+        },
+        'sitemap': {
+            hostname: 'https://dukt.net/docs/social/v2/'
+        },
+    },
     themeConfig: {
         docsRepo: 'dukt/social-docs',
         docsDir: 'docs',
