@@ -10,6 +10,7 @@ module.exports = {
             hostname: 'https://dukt.net/docs/social/v2/'
         },
     },
+    theme: 'default-prefers-color-scheme',
     themeConfig: {
         docsRepo: 'dukt/social-docs',
         docsDir: 'docs',
